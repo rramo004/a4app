@@ -1,0 +1,24 @@
+
+<!-- {{ course.title | uppercase }} <br/>
+{{ course.students | number }} <br/>
+{{ course.rating | number:'1.1-1' }} <br/>
+{{ course.price | currency }} <br/>
+{{ course.releaseDate | date:'longDate' }} <br/>
+{{ text | summary: 60 }} <br/>
+<!-- <ul>
+    <li *ngFor='let course of _courses'>{{course}}</li>
+</ul> -->
+<!-- <img [src]= '_imageURL' /> -->
+
+<!-- <button (click)='onSave($event)' class="btn btn-primary">Save</button><br/>  -->
+<!-- <input #inputTitle (keyup.enter)='onKeyUp(inputTitle.value)'/> -->
+<!-- <input [value]="_title" (keyup.enter)='_title = $event.target.value; onKeyUp()'/> -->
+<input [(ngModel)]="_title" (keyup.enter)='onKeyUp()'/>
+<h1>{{_title | summary}}</h1>
+
+<!-- <table>
+    <tr>
+        <td [attr.colspan]='colSpan'></td>
+    </tr>
+</table> -->
+
