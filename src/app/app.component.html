@@ -6,8 +6,25 @@
     <div class="body">
         <h2>Body</h2></div>
 </bootstrap-panel> -->
-<like
+<!-- <like
 [likesCount]="tweet.likesCount"
 [isActive]="tweet.isActive"
 [isLiked]="tweet.isLiked"
-></like>
+></like> -->
+
+
+<!-- <div *ngIf="coursesNew.length > 0; then courseList else noCourses">List of Courses</div>
+<ng-template #courseList>List of Courses</ng-template>
+<ng-template #noCourses>No Course Yet</ng-template> -->
+<!-- <div [hidden]="coursesNew.length == 0">List of Courses</div>
+<div [hidden]="coursesNew.length > 0">No Courses Yet</div> -->
+
+<ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
+    <li [class.active]="viewMode == 'list'" ><a (click)="viewMode = 'list'">   List View </a></li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
+</div>

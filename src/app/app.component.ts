@@ -14,10 +14,12 @@ export class AppComponent {
   // onFavoriteChanged(eventArgs: {newValue: boolean}) {
   //   console.log("Favorite Changed: " + eventArgs);
   // }
-  tweet = {
-    body: '...',
-    likesCount: 10,
-    isActive: true,
-    isLiked: '<3'
-  }
+  // tweet = {
+  //   body: '...',
+  //   likesCount: 10,
+  //   isActive: true,
+  //   isLiked: '<3'
+  // }
+  // coursesNew = [1, 2, 3]
+  viewMode = 'list';
 }
