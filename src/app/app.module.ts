@@ -9,6 +9,8 @@ import { CoursesService } from './components/courses.service';
 import { FavoriteComponent } from './components/favorite/favorite.component';
 import { PanelComponent } from './components/panel/panel.component';
 import { LikeComponent } from './components/like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './components/zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { LikeComponent } from './components/like/like.component';
     SummaryPipe,
     FavoriteComponent,
     PanelComponent,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,
