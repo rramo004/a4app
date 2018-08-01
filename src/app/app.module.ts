@@ -15,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CourseassignComponent } from './components/courseassign/courseassign.component';
 import { SignupFormComponent } from './components/signup-form/signup-form.component';
 import { NewcourseformComponent } from './components/newcourseform/newcourseform.component';
+import { NewpasswordComponent } from './components/newpassword/newpassword.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NewcourseformComponent } from './components/newcourseform/newcourseform
     ContactComponent,
     CourseassignComponent,
     SignupFormComponent,
-    NewcourseformComponent
+    NewcourseformComponent,
+    NewpasswordComponent
   ],
   imports: [
     BrowserModule,
