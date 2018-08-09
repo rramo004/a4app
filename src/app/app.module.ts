@@ -1,7 +1,7 @@
 import { PostService } from './services/post.service';
 import { SummaryPipe } from './components/summary.pipe';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
@@ -19,6 +19,7 @@ import { SignupFormComponent } from './components/signup-form/signup-form.compon
 import { NewcourseformComponent } from './components/newcourseform/newcourseform.component';
 import { NewpasswordComponent } from './components/newpassword/newpassword.component';
 import { PostscomponentsComponent } from './components/postscomponents/postscomponents.component';
+import { AppErrorHandler } from './common/app-error-handler';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PostscomponentsComponent } from './components/postscomponents/postscomp
   ],
   providers: [
     CoursesService,
-    PostService
+    PostService,
+    { provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })
